@@ -1,6 +1,6 @@
 # 学习Flutter和Dart记录
 [帖子传送门](https://juejin.cn/post/6844903972625448973)  
-![image](https://github.com/SilenceWeak/mylinux/blob/master/pictures/DartDataType.png)
+![image](https://github.com/SilenceWeak/Flutter-Dart/blob/main/Picture/DartDataType.png)
 
 * ***需要注意的地方***
   * **变量默认都是public，除此之外都是private且前面加上_表示private，同时Dart里的private仅仅修饰库访问级别**
