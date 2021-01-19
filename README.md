@@ -71,19 +71,19 @@
 ```
   * **使用Mixin（混入）来提高继承灵活性和复用性，简而言之，Mixin是为了解决implement无法复用父类方法而存在的，其存在意义和C++的多重继承有关，而为了实现Mixin，我们通常会使用with或on关键字。但是被“混入”的类也存在要求，即不能实现自己的构造器**
 ```
-      class D{
-        num x,y;
-        D(this.x,this.y);
-        void testCall() => print("($x=======,$y======)");
-      }
+     class D{
+       num x,y;
+       D(this.x,this.y);
+       void testCall() => print("($x=======,$y======)");
+     }
 
-      class E with D{//编译失败，提示D类不能被混入，因为已经定义了构造器}
+     class E with D{//编译失败，提示D类不能被混入，因为已经定义了构造器}
 ```
   * **Mixin使用on关键字：即被with的A类假如使用了on关键字作用一个B类，那么当C想要with A时必须先实现或继承了B之后才能with A**
 ```
-      class F{}
+     class F{}
 
-      mixin G on F{}
+     mixin G on F{}
 
-      class H extends F with G{ //必须先继承F类才可以，如果F是接口，那就必须先实现接口F}
+     class H extends F with G{ //必须先继承F类才可以，如果F是接口，那就必须先实现接口F}
 ```
