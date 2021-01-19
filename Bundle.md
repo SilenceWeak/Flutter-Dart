@@ -53,7 +53,7 @@
       }  
   }  
 ```    
-* **Serilization**
+* **Serializable**
 ```
   public class Person implements Serializable {  
 
@@ -76,7 +76,7 @@
 
   }  
 ```    
-* **传送、接收Parcelable数据
+* **接收发送Parcelable数据**
 ```
   //发送数据
   private void sendParcelableDataThroughBundle(){  
@@ -105,7 +105,7 @@
              "PublishTime is: " + mBook.getPublishTime());
   }
 ```    
-* **接收发送Serilization数据**
+* **接收发送Serializable数据**
 ```
   //发送数据
   private void sendSeriableDataThroughBundle(){  
@@ -133,4 +133,32 @@
     }
   }
 ```    
-* **接收**
+* **接收发送基本类型数据**
+```
+  //发送数据
+  private void sendBasicDataThroughBundle(){  
+      // "com.test" is the package name of the destination class
+      // "com.test.Activity02" is the full class path of the destination class
+      Intent intent = new Intent().setClassName("com.bundletest", "com.bundletest.Bundle02");
+
+      Bundle bundle = new Bundle();
+      bundle.putString("name", "skywang");
+      bundle.putInt("height", 175);
+      intent.putExtras(bundle);
+
+      startActivity(intent);
+
+      // end current class
+      finish();
+  }
+ 
+  //接收Parcelable数据
+  private void receiveBasicData() {
+    Bundle bundle = this.getIntent().getExtras();
+    String name = bundle.getString("name");  
+    int height = bundle.getInt("height");
+    if (name != null && height != 0)
+    Log.d(TAG, "receice basic data -- " +
+           "name="+name+", height="+height);
+  }
+``` 
