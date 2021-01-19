@@ -2,10 +2,10 @@
 [帖子传送门](https://juejin.cn/post/6844903972625448973)  
 ![image](https://github.com/SilenceWeak/mylinux/blob/master/pictures/DartDataType.png)
 
-> * ***需要注意的地方***
->>  * **变量默认都是public，除此之外都是private且前面加上_表示private，同时Dart里的private仅仅修饰库访问级别**
->>  * **const是编译时常量，在编译时就进行初始化了，但是final变量是当类创建的时候才初始化**
->>  * **在自定义函数上有许多不同其不支持重载函数**
+* ***需要注意的地方***
+  * **变量默认都是public，除此之外都是private且前面加上_表示private，同时Dart里的private仅仅修饰库访问级别**
+  * **const是编译时常量，在编译时就进行初始化了，但是final变量是当类创建的时候才初始化**
+  * **在自定义函数上有许多不同其不支持重载函数**
 ```
       //要达到可选命名参数的用法，那就在定义函数的时候给参数加上 {}
       void test1Flags({bool bold, bool hidden}) => printTest("$bold , $hidden");
@@ -30,8 +30,8 @@
       test4Flags(true); //true, false
       test4Flags(true,true); // true, true
 ```
-  >> * **复用（extends,implement,mixin,on）**
-  >>> * **在Dart中，对一个父类仅能同时选择一种方式：实现或继承**
+  * **复用（extends,implement,mixin,on）**
+    * **在Dart中，对一个父类仅能同时选择一种方式：实现或继承**
 ```
         class TestA{
         num x,y,z;
@@ -69,7 +69,7 @@
         }
       }
 ```
->> * **使用Mixin（混入）来提高继承灵活性和复用性，简而言之，Mixin是为了解决implement无法复用父类方法而存在的，其存在意义和C++的多重继承有关，而为了实现Mixin，我们通常会使用with或on关键字。但是被“混入”的类也存在要求，即不能实现自己的构造器**
+  * **使用Mixin（混入）来提高继承灵活性和复用性，简而言之，Mixin是为了解决implement无法复用父类方法而存在的，其存在意义和C++的多重继承有关，而为了实现Mixin，我们通常会使用with或on关键字。但是被“混入”的类也存在要求，即不能实现自己的构造器**
 ```
       class D{
 
@@ -82,7 +82,7 @@
 
       }
 ```
->> * **Mixin使用on关键字：即被with的A类假如使用了on关键字作用一个B类，那么当C想要with A时必须先实现或继承了B之后才能with A**
+  * **Mixin使用on关键字：即被with的A类假如使用了on关键字作用一个B类，那么当C想要with A时必须先实现或继承了B之后才能with A**
 ```
       class F{
 
@@ -96,5 +96,3 @@
 
       }
 ```
-* 看看效果
-  * 效果
