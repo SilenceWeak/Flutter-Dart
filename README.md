@@ -85,6 +85,5 @@
 
       mixin G on F{}
 
-      class H extends F with G{ //必须先继承F类才可以，如果F是接口，那就必须先实现接口F
-}
+      class H extends F with G{ //必须先继承F类才可以，如果F是接口，那就必须先实现接口F}
 ```
