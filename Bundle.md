@@ -53,7 +53,7 @@
       }  
   }  
 ```    
-* **Serializable**
+* **Serializable数据**
 ```
   public class Person implements Serializable {  
 
