@@ -6,6 +6,6 @@
   * Java在编译成Class文件后，需要用Dx工具将所有的class文件整合到一个Dex文件，目的是为了各个类能够共享数据，在一定程度上能降低冗余，为了能让文件更加的紧凑，实验证明Dex文件是传统的jar文件的50%左右  
   ![image](https://upload-images.jianshu.io/upload_images/1152636-8230c5995981b7c2.png?imageMogr2/auto-orient/strip|imageView2/2/w/604/format/webp)
 ### Dex文件结构  
-  |数据名称||解释|
-  |:----:||:--:|
-  |测试||测试|
+  |数据名称||解释|  
+  |:----:||:--:|  
+  |测试||测试|  
