@@ -16,4 +16,16 @@
   |method_ids|类方法索引，记录方法所属类名，方法声明以及方法名等信息|
   |class_defs|类定义数据索引，记录指定类各类信息，包括接口，超类，类数据偏移量|
   |data|数据区，保存了各个类的真是数据|
-  |link_data|连接数据区|
+  |link_data|连接数据区|  
+  ```
+  struct DexFile {
+    const DexHeader*    pHeader;
+    const DexStringId*  pStringIds;
+    const DexTypeId*    pTypeIds;
+    const DexFieldId*   pFieldIds;
+    const DexMethodId*  pMethodIds;
+    const DexProtoId*   pProtoIds;
+    const DexClassDef*  pClassDefs;
+    const DexLink*      pLinkData;
+  }
+  ```
