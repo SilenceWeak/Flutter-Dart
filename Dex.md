@@ -15,3 +15,7 @@
 
 * **APK文件格式讲解链接**  
   * [帖子传送门](https://juejin.cn/post/6844903780253712397)
+  * APK在签名（V2/V3签名）之后，会在数据区和中央目录区之间插入APK签名区（APK Signing Block）  
+   ![image](https://user-gold-cdn.xitu.io/2019/2/21/1690e1d9a37b9ea7?imageslim)
+  * 
+  
