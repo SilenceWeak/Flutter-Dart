@@ -53,5 +53,5 @@
   
   ### 其整体布局如下  
   ![image](https://dn-kdt-img-test.qbox.me/public_files/2018/09/30/38399687ecc6bb950f762d71d42e7780.png)  
-  *这些区域的数据相互关联、相互引用*
+  *这些区域的数据相互关联、相互引用*  
   ![image](https://b.yzcdn.cn/public_files/2018/09/30/d985020caa93cc8d0a8dc209b44a673a.png)
