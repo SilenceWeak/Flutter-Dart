@@ -19,6 +19,11 @@
    ![image](https://github.com/SilenceWeak/Flutter-Dart/blob/main/Picture/1690e1d9a37b9ea7.jpg)
   * APK签名区的构成结构如下  
    ![image](https://github.com/SilenceWeak/Flutter-Dart/blob/main/Picture/1690b94da301ef99.jpg)
+  * 其表格展示如下：  
+    * Block长度：APK签名块总长度，包括后面三个部分
+    * ID-Value序列
+    * Block长度：同上
+    * 魔数：APK Sig Block 42，hex大端表示的话就是：41 50 4b 20 3 69 67 20 42 6c 6f 63 6b 20 34 32
    ![image](https://github.com/SilenceWeak/Flutter-Dart/blob/main/Picture/1690b957a28439b9.jpg)
    ![image](https://github.com/SilenceWeak/Flutter-Dart/blob/main/Picture/1690bb3c85ec83a1.jpg)
    ![image](https://github.com/SilenceWeak/Flutter-Dart/blob/main/Picture/1690e1c184e2c5fa.jpg)
