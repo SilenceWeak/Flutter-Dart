@@ -2,6 +2,7 @@
 * **zip文件格式讲解链接**  
   * [帖子传送门](https://blog.csdn.net/a200710716/article/details/51644421)  
   * *zip文件地址偏移*  
-    ![image](https://github.com/SilenceWeak/Flutter-Dart/blob/main/Picture/image.png)
+    ![image](https://github.com/SilenceWeak/Flutter-Dart/blob/main/Picture/image.png)  
+    * 没有多重么
 * **APK文件格式讲解链接**  
   * [帖子传送门](https://juejin.cn/post/6844903780253712397)
