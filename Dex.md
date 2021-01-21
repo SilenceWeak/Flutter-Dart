@@ -17,6 +17,8 @@
   |class_defs|类定义数据索引，记录指定类各类信息，包括接口，超类，类数据偏移量|
   |data|数据区，保存了各个类的真是数据|
   |link_data|连接数据区|  
+  
+  */dalvik/libdex/DexFile.h定义如下：*
   ```
   struct DexFile {
     const DexHeader*    pHeader;
