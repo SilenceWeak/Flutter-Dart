@@ -30,4 +30,23 @@
     const DexClassDef*  pClassDefs;
     const DexLink*      pLinkData;
   }
+  ``` 
+#### classes.dex文件分析  
+  dalvik虚拟机解析dex文件的内容，最终将其映射成DexMapList数据结构，DexHeader中的mapOff字段指定了DexMapList结构在文件中的偏移  
+  ```
+  ///dalvik/libdex/DexFile.h
+  struct DexMapList {
+    u4  size;               /* 个数 */
+    DexMapItem list[1];     /* DexMapItem的结构 */
+  };
+  
+  
+  //其中size字段表示dex接来下有多少个DexMapItem结构
+
+  struct DexMapItem {
+     u2 type;              /* kDexType开头的类型 */
+     u2 unused;            /*未使用，用于字节对齐 */
+     u4 size;              /* 类型的个数 */
+     u4 offset;            /* 类型的文件偏移 */
+  };
   ```
