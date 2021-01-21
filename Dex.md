@@ -55,3 +55,8 @@
   ![image](https://dn-kdt-img-test.qbox.me/public_files/2018/09/30/38399687ecc6bb950f762d71d42e7780.png)  
   *这些区域的数据相互关联、相互引用*  
   ![image](https://b.yzcdn.cn/public_files/2018/09/30/d985020caa93cc8d0a8dc209b44a673a.png)
+  
+  ## Dex文件在Android热修复中的应用
+  主要原理是对比旧APK和新APK的的文件，生成补丁包，然后再APP中通过补丁包与旧APK的dex文件合成新的dex文件  
+  ![image](https://github.com/WeMobileDev/article/raw/master/assets/tinker/wechat.png)
+  [帖子传送门](https://tech.youzan.com/qian-tan-android-dexwen-jian/)
